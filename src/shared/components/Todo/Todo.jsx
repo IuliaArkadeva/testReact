@@ -26,6 +26,10 @@ const Todo = () => {
   }, tasksList);
 
   useEffect(() => {
+    const restoreData = () => {
+      const chachedTasksList = localStorage.getItem("tasksList");
+      chachedTasksList && setTasksList(JSON.parse(chachedTasksList));
+    };
     restoreData();
   }, []);
 
@@ -41,10 +45,7 @@ const Todo = () => {
     };
   }, [tasksList]);
 
-  const restoreData = () => {
-    const chachedTasksList = localStorage.getItem("tasksList");
-    chachedTasksList && setTasksList(JSON.parse(chachedTasksList));
-  };
+ 
 
   const onChangeAddValue = (e) => {
     setAddValue(e.target.value);
