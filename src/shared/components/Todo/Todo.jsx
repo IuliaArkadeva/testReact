@@ -31,7 +31,7 @@ const Todo = () => {
       chachedTasksList && setTasksList(JSON.parse(chachedTasksList));
     };
     restoreData();
-  }, []);
+  }, [setTasksList]);
 
   useEffect(() => {
     const saveTasksToLS = () => {
