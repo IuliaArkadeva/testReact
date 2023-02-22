@@ -14,7 +14,7 @@ const Todo = () => {
     TasksConditionConstants.ALL
   );
   const { tasksList, setTasksList, onAddTask, onDeleteTask, onEditTask } =
-    useTasks();
+    useTasks(); 
 
   const FILTERING_FUNCS = [
     (tasks) => TaskUtils.filterBySearch(tasks, searchValue),
