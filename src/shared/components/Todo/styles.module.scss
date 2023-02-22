@@ -1,0 +1,107 @@
+.todo {
+  width: clamp(300px, 50%, 1000px);
+  padding: 30px;
+  border-radius: 25px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 1px 0px 16px -1px rgba(#000, 0.27);
+}
+
+.filterTasks {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.allTasks {
+  width: 100px;
+  height: 22px;
+  border-radius: 11px 0px 0px 11px;
+  border: none;
+  background-color: rgba(242, 243, 242, 0.945);
+  cursor: pointer;
+}
+
+.activeTasks {
+  width: 100px;
+  height: 22px;
+  margin: 0px 7px 0px 7px;
+  border: none;
+  background-color: rgba(242, 243, 242, 0.945);
+  cursor: pointer;
+}
+
+.complitedTasks {
+  width: 100px;
+  height: 22px;
+  border-radius: 0px 11px 11px 0px;
+  border: none;
+  background-color: rgba(242, 243, 242, 0.945);
+  cursor: pointer;
+}
+
+.searchContainer {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+$common-border-radius: 30px;
+
+.searchInput {
+  width: 100%;
+  border-radius: $common-border-radius;
+  padding: 10px 20px;
+  font-size: 22px;
+  border: 2px solid teal;
+  outline: none;
+  &:focus {
+    border-color: #c8c8c8;
+  }
+}
+
+.addButton {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid teal;
+  border-radius: $common-border-radius;
+  padding: 0 40px;
+  background-color: white;
+  font-size: 22px;
+  color: #6b6b6b;
+  &:hover {
+    color: teal;
+  }
+  cursor: pointer;
+}
+
+.clearTasksBtn {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 15px;
+  color: #6b6b6b;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    color: red;
+    border: 2px solid;
+  }
+}
+
+.saveBtn {
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: white;
+  border: 1px solid teal;
+  border-radius: 15px;
+  color: #6b6b6b;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    color: teal;
+    border: 2px solid;
+  }
+}
